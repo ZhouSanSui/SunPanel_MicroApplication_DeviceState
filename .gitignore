@@ -1,0 +1,9 @@
+node_modules
+dist
+.history
+.DS_Store
+.template-sync-info.json
+# 交付包随仓库一起分发（2026-10-15 用户要求「源码 + 交付 zip 一起推」）
+packages/*
+!packages/*.zip
+!.gitkeep

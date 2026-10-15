@@ -1,0 +1,50 @@
+{
+  "appJsonVersion": "1.1",
+  "author": "周三岁",
+  "version": "1.0.261015",
+  "entry": "main.js",
+  "icon": "logo.png",
+  "debug": false,
+  "appInfo": {
+    "appName": "$t:APP_NAME",
+    "description": "$t:APP_DESCRIPTION",
+    "networkDescription": "$t:NETWORK_DESCRIPTION"
+  },
+  "locales": {
+    "zh-CN": "zh-CN.json",
+    "en-US": "en-US.json"
+  },
+  "defaultLocale": "zh-CN",
+  "permissions": [
+    "network",
+    "dataNode"
+  ],
+  "networkDomains": [
+    "*"
+  ],
+  "dataNodes": {
+    "widgetConfig": {
+      "scope": "user",
+      "isPublic": false
+    }
+  },
+  "microAppId": "zhousansui-device-state",
+  "apiVersion": "1.0.19",
+  "components": {
+    "pages": {
+      "server-monitor-config": {}
+    },
+    "widgets": {
+      "server-monitor-widget": {
+        "configComponentName": "server-monitor-config",
+        "size": [
+          "2x4"
+        ],
+        "background": "",
+        "widgetName": "$t:WIDGET_NAME",
+        "widgetDescription": "$t:WIDGET_DESCRIPTION",
+        "sort": 10
+      }
+    }
+  }
+}
